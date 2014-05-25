@@ -1,0 +1,44 @@
+.pure-g-r > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pure-g-r-ajs-book {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pure-button-ajs-book {
+    margin: 2px;
+    width: 98%;
+    box-sizing: border-box;
+}
+
+.fill-parent {
+    width: 100%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.padded {
+    padding: 0px 8px;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}

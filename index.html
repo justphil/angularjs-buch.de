@@ -4,35 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>AngularJS Bücher von Philipp Tarasiewicz, Robin Böhm und Sascha Brink</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
-    <link rel="stylesheet" href="styles/pure-skin-ajs-book.css">
+
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="styles/pure-skin-ajs-book-monochrome.css">
     <link rel="stylesheet" href="styles/ajs-book-custom.css">
 </head>
 <body class="pure-skin-ajs-book">
 
-<div class="pure-g-r pure-g-r-ajs-book">
-    <div class="pure-u-1-1 align-center">
+<div class="pure-g pure-g-ajs-book pure-g-ajs-book-header">
+    <div class="pure-u-1 align-center">
         <h1 class="inline">ANGULARJS-BUCH.DE</h1>
     </div>
 
-    <div class="pure-u-1-1 align-center">
-        - alle Bücher von ANGULARJS.DE -
+    <div class="pure-u-1 align-center">
+        <div class="pure-g-ajs-book-subtitle">
+            - alle Bücher von <a href="http://angularjs.de" target="_blank">ANGULARJS.DE</a> -
+        </div>
     </div>
 </div>
 
-<div class="pure-g-r pure-g-r-ajs-book">
-    <div class="pure-u-1-2 padded align-center">
-        <h2>AngularJS</h2>
-        <h3>Eine praktische Einführung in das JavaScript-Framework</h3>
+<div class="pure-g pure-g-ajs-book">
+    <div class="pure-u-1 pure-u-lg-1-2 align-center">
+        <div class="pure-g pure-g-ajs-book-panel">
+            <div class="pure-u-1">
+                <h2>AngularJS</h2>
+                <h3>Eine praktische Einführung in das JavaScript-Framework</h3>
+            </div>
+        </div>
 
-        <div class="pure-g-r">
-            <div class="pure-u-1-3">
-                <img src="images/ajs-book-xs.jpg"
-                     alt="AngularJS - Eine praktische Einführung in das JavaScript-Framework"
-                     class="rounded"/>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3 align-center">
+                <a href="http://www.amazon.de/AngularJS-Eine-praktische-Einf%C3%BChrung-JavaScript-Framework/dp/3864901545/ref=sr_1_1?ie=UTF8&qid=1401544840&sr=8-1&keywords=angularjs" target="_blank">
+                    <img src="images/ajs-book-xs.jpg"
+                         alt="AngularJS - Eine praktische Einführung in das JavaScript-Framework"
+                         class="pure-img pure-img-ajs-book rounded"/>
+                </a>
             </div>
 
-            <div class="pure-u-2-3 padded">
+            <div class="pure-u-1 pure-u-md-2-3 padded">
                 <div class="inline fill-parent">
                     <table class="pure-table pure-table-horizontal fill-parent">
                         <thead>
@@ -44,7 +61,12 @@
                         <tbody>
                             <tr>
                                 <td>Autor(en)</td>
-                                <td>Philipp Tarasiewicz, Robin Böhm</td>
+                                <td>
+                                    <a href="http://angularjs.de/entwickler/justphil" target="_blank">
+                                        Philipp Tarasiewicz
+                                    </a>,
+                                    <a href="http://angularjs.de/entwickler/robinboehm" target="_blank">Robin Böhm</a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>ISBN</td>
@@ -66,39 +88,53 @@
                     </table>
                 </div>
 
-                <div class="pure-g-r">
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-ajs-book" href="#">Verlagsseite</a>
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-ajs-book" href="http://dpunkt.de/buecher/4489/angularjs.html" target="_blank">
+                            Verlagsseite
+                        </a>
                     </div>
 
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-ajs-book" href="#">Sample</a>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-ajs-book" href="http://dpunkt.de/leseproben/4489/2_AngularJS%20Schnellstart.pdf" target="_blank">
+                            Sample
+                        </a>
                     </div>
 
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="#">Code-Beispiele</a>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="https://github.com/angularjs-de/dpunkt-buch-beispiele" target="_blank">
+                            Code-Beispiele
+                        </a>
                     </div>
 
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="#">Amazon</a>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="http://www.amazon.de/AngularJS-Eine-praktische-Einf%C3%BChrung-JavaScript-Framework/dp/3864901545/ref=sr_1_1?ie=UTF8&qid=1401544840&sr=8-1&keywords=angularjs" target="_blank">
+                            Amazon
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="pure-u-1-2 padded align-center">
-        <h2>AngularJS Cookbook</h2>
-        <h3>70 Recipes for AngularJS 1.2</h3>
+    <div class="pure-u-1 pure-u-lg-1-2 align-center">
+        <div class="pure-g pure-g-ajs-book-panel">
+            <div class="pure-u-1">
+                <h2>AngularJS Cookbook</h2>
+                <h3>70 Recipes for AngularJS 1.2</h3>
+            </div>
+        </div>
 
-        <div class="pure-g-r">
-            <div class="pure-u-1-3">
-                <img src="images/ajs-cookbook.jpeg"
-                     alt="AngularJS Cookbook - 70 Recipes for AngularJS 1.2"
-                     class="rounded"/>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3 align-center">
+                <a href="https://leanpub.com/angularjs-cookbook" target="_blank">
+                    <img src="images/ajs-cookbook.jpeg"
+                         alt="AngularJS Cookbook - 70 Recipes for AngularJS 1.2"
+                         class="pure-img pure-img-ajs-book rounded"/>
+                </a>
             </div>
 
-            <div class="pure-u-2-3 padded">
+            <div class="pure-u-1 pure-u-md-2-3 padded">
                 <div class="inline fill-parent">
                     <table class="pure-table pure-table-horizontal fill-parent">
                         <thead>
@@ -110,7 +146,9 @@
                         <tbody>
                         <tr>
                             <td>Autor(en)</td>
-                            <td>Sascha Brink</td>
+                            <td>
+                                <a href="http://angularjs.de/entwickler/saschabrink" target="_blank">Sascha Brink</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>ISBN</td>
@@ -132,21 +170,29 @@
                     </table>
                 </div>
 
-                <div class="pure-g-r">
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-ajs-book" href="#">Verlagsseite</a>
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-ajs-book" href="https://leanpub.com/angularjs-cookbook" target="_blank">
+                            Verlagsseite
+                        </a>
                     </div>
 
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-ajs-book" href="#">Sample</a>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-ajs-book" href="http://samples.leanpub.com/angularjs-cookbook-sample.pdf" target="_blank">
+                            Sample
+                        </a>
                     </div>
 
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="#">Code-Beispiele</a>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="https://github.com/sbrink/angularjs-cookbook-code" target="_blank">
+                            Code-Beispiele
+                        </a>
                     </div>
 
-                    <div class="pure-u-1-2">
-                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="#">Amazon</a>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <a class="pure-button pure-button-primary pure-button-ajs-book" href="https://leanpub.com/angularjs-cookbook/packages/book/purchases/new" target="_blank">
+                            Jetzt kaufen
+                        </a>
                     </div>
                 </div>
             </div>

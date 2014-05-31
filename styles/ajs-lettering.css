@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Changa+One);
+
+.ajs-lettering {
+    display: none;
+}
+
+@media screen and (min-width: 48em) {
+    .small-lettering {
+        display: none;
+    }
+
+    .ajs-lettering {
+        display: inline-block;
+        min-width: 0.9em;
+        font-family: 'Changa One', cursive;
+        font-size: 2.5em;
+        color: #eaeaea;
+    }
+
+    .ajs-lettering-red {
+        background-image: url('../images/lettering_base_red.jpg');
+        background-size: 100% 100%;
+        border-radius: 8px;
+        text-shadow: #fff 0px 1px 0, #000 -1px -3px 0;
+
+        -webkit-box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.7);
+        -moz-box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.7);
+        box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.7);
+    }
+
+    .ajs-lettering-black {
+        background-image: url('../images/lettering_base_black.jpg');
+        background-size: 100% 100%;
+        border-radius: 8px;
+        text-shadow: #fff 0px 1px 0, #000 0 -3px 0;
+
+        -webkit-box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.7);
+        -moz-box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.7);
+        box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.7);
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .ajs-lettering {
+        font-size: 3.8em;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .ajs-lettering {
+        font-size: 4.8em;
+    }
+}

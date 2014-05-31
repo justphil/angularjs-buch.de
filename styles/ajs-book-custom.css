@@ -1,10 +1,7 @@
-/*@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);*/
-
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700);
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    /*font-family: 'Arvo', serif;*/
     font-family: 'Maven Pro', sans-serif;
 }
 
@@ -38,6 +35,16 @@ body {
 
 .pure-g-ajs-book-header {
     background-color: rgba(50, 50, 50, 0.4);
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.pure-g-ajs-book-footer {
+    margin-top: 3em;
+    background-color: #ffffff;
+}
+
+.pure-ajs-book-copyright {
+    font-size: 84%;
 }
 
 .pure-g-ajs-book-panel {
@@ -63,6 +70,10 @@ body {
     display: inline;
 }
 
+.pure-img-ajs-book-footer {
+    max-width: 40%;
+}
+
 .pure-button-ajs-book {
     margin: 1px;
     width: 99%;
@@ -79,6 +90,10 @@ body {
 
 .padded {
     padding: 0px 6px;
+}
+
+.top-padded {
+    padding-top: 2em;
 }
 
 .rounded {
